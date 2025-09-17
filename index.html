@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Digital Clock</title>
+  <link rel="stylesheet" href="/day-01-digital-clock/style.css">
+</head>
+<body>
+  <div class="clock-container">
+    <h1 id="clock">00:00:00</h1>
+    <p id="date">Loading date...</p>
+
+    <div class="controls">
+      <button onclick="toggleFormat()">Toggle 12/24 Hour</button>
+      <button onclick="toggleTheme()">Toggle Light/Dark</button>
+    </div>
+
+    <div class="stopwatch">
+      <h2>Stopwatch</h2>
+      <div id="stopwatch">00:00:00</div>
+      <div class="stopwatch-controls">
+        <button onclick="startStopwatch()">Start</button>
+        <button onclick="stopStopwatch()">Stop</button>
+        <button onclick="resetStopwatch()">Reset</button>
+        <button onclick="recordLap()">Lap</button>
+      </div>
+      <ul id="laps"></ul>
+    </div>
+
+    <div class="alarm">
+      <h2>Alarm</h2>
+      <input type="time" id="alarmTime">
+      <button onclick="setAlarm()">Set Alarm</button>
+      <ul id="alarms"></ul>
+    </div>
+  </div>
+
+  <audio id="alarmSound" src="https://www.soundjay.com/buttons/sounds/beep-07.mp3" preload="auto"></audio>
+   
+  <script src="script.js"></script>
+</body>
+</html>

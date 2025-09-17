@@ -1,0 +1,80 @@
+    body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 20px;
+  min-height: 100vh;
+  transition: background 0.5s, color 0.5s;
+  flex-direction: column;
+}
+body.night { background-color: #0d1117; color: #43f8ec; }
+body.morning { background-color: #151514; color: #333; }
+body.day { background-color: #0c0d0d; color: #222; }
+body.light { background-color: #f0f0f0; color: #111; }
+
+.clock-container {
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(43, 247, 247, 0.958);
+  background: rgba(0, 0, 0, 0.05);
+  color: white;
+}
+
+#clock {
+  font-size: 3rem;
+  margin: 0;
+}
+
+#date {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+}
+
+.controls button,
+.stopwatch-controls button,
+.alarm button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #222;
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #444;
+  
+}
+
+.stopwatch,
+.alarm {
+  margin-top: 30px;
+}
+
+#stopwatch {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#laps,
+#alarms {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  text-align: left;
+}
+
+li button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+}
